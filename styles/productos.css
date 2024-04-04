@@ -1,0 +1,208 @@
+/*SECTION GENERAL*/
+
+section {
+    height:auto;
+    background-color: #eceff1;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 1em;
+}
+
+section h1 {
+    width: 100%;
+    margin: 0;
+    padding: 0.3em 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    height: 12%;
+}
+
+/*SECTION1: PRODUCTOS COMERCIAL*/
+/*ESTILOS DEL GRID DE PRODUCTOS*/
+
+.grid {
+    transition: ease 0.25s;
+    padding: 0 1em;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/*ESTILOS DE PRODUCTOS (items)*/
+
+.grid .item {
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    border-radius: 1em;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.grid .item:hover {
+    background-color: #1e84c630;
+}
+
+.grid .item .contenedor-foto {
+    height: 60%;
+    width: 100%;
+}
+
+.grid .item .contenedor-foto img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .item p {
+    text-align: center;
+    color: #1e84c6;
+    font-weight: bold;
+}
+
+.grid .item .descripcionCompleta {
+    display: none;
+}
+
+.grid .item .medidas {
+    display: none;
+}
+
+/*ITEM SELECCIONADO*/
+
+.seleccion {
+    transition: ease 0.25s;
+    opacity: 0;
+    display: none;
+    margin: 1% 0;
+    height: auto;
+    width: 42%;
+    border: 1px solid #1e84c6;
+    border-radius: 1em;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+
+/*BOTON DE CERRAR*/
+
+.cerrar {
+    font-size: 1.5em;
+    padding: 0 1em;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+    padding: 2% 0;
+    gap: 0.3em;
+}
+
+.info img {
+    align-self: center;
+    width: 60%;
+    height: 60%;
+}
+
+.info h2{
+    font-size: 2em;
+    margin: 0;
+    color: #1e84c6;
+    width: 80%;
+    align-self: center;
+}
+.info p{
+    margin: 0;
+    width: 80%;
+    align-self: center;
+    font-size: 1em;
+    color: #707070;
+}
+
+.info span {
+    font-size: 1.1em;
+    width: 80%;
+    align-self: center;
+}
+
+.info .fila {
+    justify-content: center;
+    width: 100%;
+}
+
+.info .fila .size {
+    padding: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.info .fila .size label {
+    font-size: 1.1em;
+    padding: 0.5em 0;
+    display: flex;
+    width: 100%;
+}
+
+.info .fila .size select{
+    width: auto;
+    font-size: 1.1em;
+    border: none;
+    background-color: #1e84c650;
+    padding: 0.3em;
+    border-radius: 0.25em;
+}
+
+.info .fila button{
+    font-weight: bold;
+    align-self: center;
+    width: 30%;
+    height: 3em;
+    border: none;
+    font-size: 1.4em;
+    color: #fff;
+    border-radius: 0.5em;
+    background-color: #1e84c6;
+    cursor: pointer;
+}
+
+.info .fila button:hover {
+    border: solid 1px #1e84c6;
+    color: #1e84c6;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+    section {
+        background-color: transparent;
+    }
+
+    .section1 {
+        margin-top: 5em;
+    }
+
+    section h1 {
+        font-size: 2.2em;
+        color: white;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid .item, .grid .item:hover  {
+        background-color: #eceff1;
+    }
+    
+}

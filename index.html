@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corpo Plast C.A.</title>
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="./styles/gereralStyles.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <!--  Scripts-->
+    <script src="./scripts/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+   
+    <!-- SCRIPTS Y ESTILOS DE LOS CARRUSELES -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  </head>
+  
+  <body class="container">
+    <div class="parallax" style="background-image: url(./images/bannercorpoplast.svg);">
+    <main>
+      <header class="container">
+        <div>
+          <img src="./images/IsotipoCorpoPlast.png" alt="" />
+        </div>
+        <nav class="container">
+          <a href="./index.html"><div>INICIO</div></a>
+          <a href="./info.html#servicios"><div>SERVICIOS</div></a>
+          <a href="./info.html"><div>SOBRE NOSOTROS</div></a>
+          <a href="./productos.html"><div>CATÁLOGO</div></a>
+          <a href="./contacto.html"><div>CONTACTO</div></a>
+        </nav>
+        <nav class="navbar">
+          <div class="nav_items" id="_items">
+              <a href="./index.html">INICIO</a>
+              <a href="./info.html#servicios">SERVICIO</a>
+              <a href="./info.html">SOBRE NOSOTROS</a>
+              <a href="./productos.html">CATÁLOGO</a>
+              <a href="./contacto.html">CONTACTO</a>
+         </div>
+          <div class="nav_toggle" id="_toggle" onclick="burgerMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+         </div>
+        </nav>
+      </header>
+      <section class="section1 container" id="section1">
+        <div class="container">
+          <div class="container image">
+            <img src="./images/IsotipoCorpoPlast.png" alt="" />
+          </div>
+          <h1>CORPO PLAST</h1>
+          <p>
+            Más de 20 años siendo lideres en la fabricación de empaques
+            flexibles para toda la industria.
+          </p>
+        <div class="container">
+          <a href="/info.html#servicios">
+          <button class="mainBotton">VER SERVICIOS</button>
+        </a>
+          <a href="https://wa.me/message/CH3W5WUVBRY7J1">
+            <button class="mainBotton">CONTACTAR</button>
+          </a>
+        </div>
+        </div>
+      </section>
+      <section class="section2 container">
+        <h1>Productos</h1>
+        <div class="grid animado">
+           <div class="container producto" onclick="enviarACatalogo(1)">
+            <div>
+              <img src="./images/comercialMiniatura.png" alt="" />
+            </div>
+            <h2>Comercial</h2>
+            <p>
+              Bolsas tipo boutique, bolsas de asa, bolsas para hielo y empaques
+              impresos con el diseño del cliente.
+            </p>  
+          </div>
+          <div class="container producto" onclick="enviarACatalogo(2)">
+            <div>
+              <img src="./images/agricolaMiniatura.png" alt="" />
+            </div>
+            <h2>Agrícola</h2>
+            <p>
+              Bolsas para vivero en todos los tamaños, bolsas para ensilaje,
+              acolchado para cultivos y bolsa amarilla para control de plagas.
+            </p>
+          </div>
+          <div class="container producto" onclick="enviarACatalogo(3)">
+            <div>
+              <img src="./images/industrialMiniatura.png" alt="" />
+            </div>
+            <h2>Industrial</h2>
+            <p>
+              Todo tipo de empaques y bolsas hechos a la medida. Bolsas
+              valvuladas, bolsas para cestas y bobinas de termoencogible.
+            </p>
+          </div>
+          
+          <div class="container producto" onclick="enviarACatalogo(4)">
+            <div class="container">
+              <img src="./images/desechosMiniatura.png" alt="" />
+            </div>
+            <h2>Recoleccion de desechos</h2>
+            <p>
+              Bolsas para recoleccion de desechos de alta resistencia a
+              desgarres, bolsas para desechos biologicos y más.
+            </p>
+          </div>
+        </div>
+       
+      </section>
+      <section class="section3 container">
+            <div>
+                <h2>
+                    ¡REALIZA TU PEDIDO!
+                </h2>
+            </div>
+            <div class="container">
+                <a href="https://wa.me/message/CH3W5WUVBRY7J1">
+                    <button class="mainBotton">CONTACTAR</button>
+                  </a>
+            </div>
+      </section>
+      <section class="section4 container">
+        <h1>Nuestros clientes</h1>
+        <div class="swiffy-slider slider-item-show5 slider-nav-outside slider-nav-sm slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-32x9 bg-white shadow-lg py-3 py-lg-4" data-slider-nav-autoplay-interval="3000">
+          <div class="slider-container ">
+              <div><img src="./images/hieloterepaimaCliente.png" alt="..."></div>
+              <div><img src="./images/pollosabrosoCliente.png" loading="lazy" alt="..."></div>
+              <div><img src="./images/arichunaCliente.png" loading="lazy" alt="..."></div>
+              <div><img src="./images/fritzCliente.png" loading="lazy" alt="..."></div>
+              <div><img src="./images/sisecaCliente.png" loading="lazy" alt="..."></div>
+          </div>
+      </div>
+    </section>
+    <!-- iFrame QUE INSERTA EL FOOTER -->
+       <iframe class="footerIframe" src="./footer.html" frameborder="0" scrolling="no"></iframe>
+    </main>
+    </div>
+  </body>
+</html>

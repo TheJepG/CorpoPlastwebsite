@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="./styles/gereralStyles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/contacto.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <!--  Scripts-->
+    <script src="./scripts/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ION ICON -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="container">
+    <div class="parallax" style="background-image: url(./images/bannercorpoplast.svg);">
+      <main>
+        <header class="container">
+          <div>
+            <img src="./images/IsotipoCorpoPlast.png" alt="" />
+          </div>
+          <nav class="container">
+            <a href="./index.html"><div>INICIO</div></a>
+            <a href="./info.html#servicios"><div>SERVICIOS</div></a>
+            <a href="./info.html"><div>SOBRE NOSOTROS</div></a>
+            <a href="./productos.html"><div>CATÁLOGO</div></a>
+            <a href="./contacto.html"><div>CONTACTO</div></a>
+          </nav>
+          <nav class="navbar">
+            <div class="nav_items" id="_items">
+                <a href="./index.html">INICIO</a>
+                <a href="./info.html#servicios">SERVICIO</a>
+                <a href="./info.html">SOBRE NOSOTROS</a>
+                <a href="./productos.html">CATÁLOGO</a>
+                <a href="./contacto.html">CONTACTO</a>
+           </div>
+            <div class="nav_toggle" id="_toggle" onclick="burgerMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+           </div>
+          </nav>
+        </header>
+        <section class="sectionPadre container aparecer">
+          <section class="section1 container">
+            <div class="grid">
+              <div class="container">
+                <ion-icon class="icons" name="mail-outline"></ion-icon>
+                <p>ventas@corpoplastca.com</p>
+                <p>informacion@corpoplast.com</p>
+              </div>
+              <div class="container">
+                <ion-icon class="icons" name="call-outline"></ion-icon>
+                <p>+58 424-5652168</p>
+              </div>
+              <div class="container">
+                <ion-icon class="icons" name="logo-instagram"></ion-icon>
+                <p>@corpoplast</p>
+              </div>
+              <div class="container">
+                <ion-icon class="icons" name="logo-whatsapp"></ion-icon>
+                <p>+58 416-6501656</p>
+              </div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15713.144119163308!2d-69.3885125!3d10.0756332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8764295efac843%3A0x867d27c073f40844!2sCORPO%20PLAST%2C%20C.A.!5e0!3m2!1ses!2sve!4v1708456032551!5m2!1ses!2sve"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+          <section class="section2 container">
+            <h1>ENVÍANOS UN MENSAJE</h1>
+            <p>
+              Deja tus datos de contacto y requerimientos, nos pondremos en
+              contacto lo antes posible
+            </p>
+            <div class="container"> 
+            <form
+              aria-colspan="enviar.php"
+              method="post"
+              class="form_contact container"
+            >
+              <input
+                type="text"
+                placeholder="Escribe tu nombre"
+                id="names"
+                name="nombre"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Correo"
+                id="email"
+                name="correo"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Teléfono"
+                id="phone"
+                name="telefono"
+              />
+              <input
+                type="text"
+                placeholder="Mensaje"
+                id="mensaje"
+                name="mensaje"
+                required
+                />
+              <button value="Enviar Mensaje" id="btnSend">ENVIAR</button>
+            </form>
+        </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+.sectionPadre {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    gap: 3%;
+    flex-wrap: wrap;
+}
+
+/* SECCION 1 DE CONTACTO */
+
+.section1 {
+    width: 44%;
+    height: auto;
+    flex-direction: column;
+}
+
+.section1 > .grid {
+    height: 40%;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.section1 > .grid > .container {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.section1 > .grid > .container ion-icon {
+    align-self: flex-start;
+    color: white;
+    font-size: 3em;
+    height: 50%;
+    width: 30%
+}
+
+.section1 > .grid > .container p {
+    padding: 0 0.8em;
+    font-size: 1.5em;
+    color: white;
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.section1 iframe {
+    border-radius: 1em;
+    height: 55%;
+    width: 100%;
+}
+
+/* SECCION 2 DE CONTACTO */
+
+.section2 {
+    width: 48%;
+    height: 50vh;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.section2 h1 {
+    color: white;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+  } 
+  
+  .section2 p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+  } 
+
+  .section2 .container {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .section2 .container form {
+    width: 100%;
+    height: 80%;
+  }
+  
+  .section2 > .container > form input {
+    border-radius: 0.5em;
+    overflow: auto;
+    border-style: none;
+    border-color: white;
+    font-size: 1em;
+    width: 90%;
+    margin: 0.3em 0;
+    height: 15%; 
+    padding: 1em 1em;
+  } 
+  
+  .section2 input:focus {
+    transition: all cubic-bezier(0.075, 0.82, 0.165,1) 1s;
+    transform: scale(1.02);
+    box-shadow: 5px 5px 30px black;
+  }
+  .section2 > .container > form input:last-of-type{
+    height: 10em;
+  } 
+
+  .section2 button {
+    color: white;
+    border: none;
+    font-size: 1em;
+    padding: 1em 2em;
+    background-color: #1E84CE;
+    border-radius: 0.3em;
+    font-weight: bold;
+    width: 35%;
+  }
+  
+  .section2 button:hover {
+    width: 98%;
+    transition: all 1s;
+    background-color: rgb(227,5,19);
+    box-shadow: 5px 3px 50px grey;
+  }
+
+  
+  @keyframes aparicion {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 1;
+       transform: scale(1) translateX(0);
+    }
+  }
+
+
+/* MEDIA QUERY RESPONSIVE: MOBILE */
+
+@media screen and (max-width: 768px) {
+
+.sectionPadre {
+  height: 95em;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2em;
+}
+
+.section1 {
+    order: 2;
+    width: 100%;
+    height: auto;
+}
+
+.section1 .grid {
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 10em);
+}
+
+.section1 .grid .container {
+  width: 100%;
+  justify-content: center;
+align-items: center;
+}
+
+.section1 .grid .container ion-icon {
+  width: 100%;
+}
+
+.section1 .grid .container p {
+  text-align: center;
+  width: 100%;
+}
+
+.section1 iframe {
+  height: 17rem;
+}
+.section2 { 
+  height: 30%;
+  order: 1;
+  width: 100%;
+}
+
+.section2 h1 { 
+  padding: 0 0.6em;
+ font-size: 2em;
+}
+
+.section2 p {
+  padding: 0 1.2em;
+  font-size: 1em;
+}
+
+.section2 > .container {
+  justify-content: center;
+  height: 70%;
+}
+
+.section2 > .container > form {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+}

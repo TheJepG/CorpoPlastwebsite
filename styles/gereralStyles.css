@@ -1,0 +1,142 @@
+/* FUENTE DE TEXTO */
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: fallback;
+  src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+/* Efecto de scroll suavizado a todo el sitio */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Body con efecto parallax*/
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.parallax {
+  background-image: url("/images/bannercorpoplast.svg");
+  position: absolute;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Aqui se le da el degradado*/
+
+main {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(227, 5, 19, 0.8015581232492998) 0%,
+    rgba(30, 132, 192, 0.5018382352941176) 50%
+  );
+}
+
+/* Clases GRID y CONTAINER para el sitio */
+
+.container {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/* Iframe que inserta el footer en las paginas del sitio */
+
+.footerIframe {
+  width: 100%; 
+  height: 29em; 
+  padding: 1em 0 0 0;
+  margin: 0 !important;
+}
+
+/* Animacion hacia arriba con scroll */
+
+.animado {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.mostrarArriba {
+  animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+  0% {
+    transform: translateY(10em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animacion de aparición al cargar */
+.aparecer {
+  animation-name: aparicion;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+@keyframes aparicion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+
+/* MODIFICAR SCROLL BAR */
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7c7c7c;
+  border-radius: 20px;
+  border: 3px white solid;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .parallax2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footerIframe {
+    height: 37em;
+  }
+
+  .headerIframe {
+    height: auto;
+    width: 100%;
+  }
+
+}

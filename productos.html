@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo</title>
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="./styles/gereralStyles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/productos.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  </head>
+  <body class="container">
+  <div class="parallax" style="background-image: url(./images/bannercorpoplast.svg);">
+    <main>
+        <header class="container">
+            <div>
+              <img src="./images/IsotipoCorpoPlast.png" alt="" />
+            </div>
+            <nav class="container">
+              <a href="./index.html"><div>INICIO</div></a>
+              <a href="./info.html#servicios"><div>SERVICIOS</div></a>
+              <a href="./info.html"><div>SOBRE NOSOTROS</div></a>
+              <a href="./productos.html"><div>CATÁLOGO</div></a>
+              <a href="./contacto.html"><div>CONTACTO</div></a>
+            </nav>
+            <nav class="navbar">
+              <div class="nav_items" id="_items">
+                  <a href="./index.html">INICIO</a>
+                  <a href="./info.html#servicios">SERVICIO</a>
+                  <a href="./info.html">SOBRE NOSOTROS</a>
+                  <a href="./productos.html">CATÁLOGO</a>
+                  <a href="./contacto.html">CONTACTO</a>
+             </div>
+              <div class="nav_toggle" id="_toggle" onclick="burgerMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+             </div>
+            </nav>
+          </header>
+
+ <!-- VENTANA MODAL MUESTRA INFORMACIÓN DE PRODUCTO EN VERSIÓN MOBILE-->
+        
+        <div id="ventanaModal" class="modal" onclick="cerrarModal()">
+            <div class="contenido-modal">
+                <span class="cerrarModal" id="cerrarModal" onclick="cerrarModal(event)">&times;</span>
+                <div class="info">
+                    <img src="./images/desechosMiniatura.png" loading="lazy" alt="" id="imgModal">
+                    <h2 id="productoModal">EMPAQUE</h2>
+                    <p id="descripcionModal"></p>
+                    <span class="precio" id="precioModal">$ 1300</span>
+                    <div class="fila container">
+                        <div class="size">
+                            <label for="">MEDIDAS</label>
+                            <select name="" id="medidasDisponiblesModal">
+                                <option></option>
+                            </select>
+                        </div>
+                        <button class="botonEnviarMensaje"><span class="material-symbols-outlined" style="font-size: 1.75em;">
+                            shopping_bag
+                            </span></button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+       <!--TODO SECTION 1-->
+        <section class="section1 container" id="section1">
+          <h1>Comercial</h1>
+          <div class="grid" id="gridMostrador">
+                <div class="item container" onclick="cargarProducto(this, 1)">
+                      <div class="contenedor-foto">
+                          <img src="images/productos/productoBoutique.png" alt="">
+                      </div>
+                      <p class="descripcion">BOLSAS BOUTIQUE</p>
+                      <p class="descripcionCompleta">Personalizables al gusto del cliente. Ideal para objetos electrónicos, accesorios, zapatos, ropa, y mercancías comercializadas por las tiendas de departamento</p>
+                    <select class="medidas" name="" id="">
+                        <option value="0">20x30</option>
+                        <option value="1">30x40</option>
+                        <option value="2">40x50</option>
+                        <option value="3">50x50</option>
+                    </select>
+                      <span class="precio">POR MILLAR</span>
+                  </div>
+                  <div class="item container" onclick="cargarProducto(this, 1)">
+                    <div class="contenedor-foto">
+                        <img src="images/productos/productoAsa.png" loading="lazy" alt="">
+                    </div>
+                    <p class="descripcion">BOLSAS DE ASA</p>
+                    <p class="descripcionCompleta">Ideales para abastos, charcuterías, frigoríficos, ferreterías, entre otros; cuentan con agarraderas (asas) para mayor facilidad al transportar o cargar.</p>
+                    <select class="medidas" name="" id="">
+                        <option value="">2 KGs</option>
+                        <option value="">3 KGs</option>
+                        <option value="">5 KGs</option>
+                        <option value="">15 KGs</option>
+                        <option value="">20 KGs</option>
+                        <option value="">25 KGs</option>
+                        <option value="">30 KGs</option>
+                    </select>
+                    <span class="precio">POR BULTOS</span>
+                </div>
+                <div class="item container" onclick="cargarProducto(this, 1)">
+                  <div class="contenedor-foto">
+                      <img src="images/productos/productoAsaExtraResistente.png" loading="lazy"  alt="">
+                  </div>
+                  <p class="descripcion">ASA EXTRA RESISTENTES</p>
+                  <p class="descripcionCompleta">Una medida especial desarrollada para productos que requieran una mayor resistencia para su transporte. Cuentan con agarraderas para facilitar el manejo de mercancías.</p>
+                  <select class="medidas" name="" id="">
+                      <option value="">10 KGs</option>
+                  </select>
+                  <span class="precio">POR BULTOS</span>
+            </div>
+            <div class="item container" onclick="cargarProducto(this, 1)">
+                <div class="contenedor-foto">
+                    <img src="images/productos/productoBolsasSinAsa.png" loading="lazy"  alt="">
+                </div>
+                <p class="descripcion">BOLSAS SIN ASA</p>
+                <p class="descripcionCompleta">Bolsas plásticas fabricadas a la medida del cliente. Para todo tipo de comercios</p>
+                    <select class="medidas" name="" id="">
+                        <option value="">1/2 KGs</option>
+                        <option value="">1 KGs</option>
+                    </select>
+                <span class="precio">FABRICADO A PEDIDO</span>
+            </div>
+            <div class="item container" onclick="cargarProducto(this, 1)">
+              <div class="contenedor-foto">
+                  <img src="images/productos/productoCestera.png" loading="lazy" alt="">
+              </div>
+              <p class="descripcion">BOLSAS CESTERAS</p>
+              <p class="descripcionCompleta">Empaques secundarios para cualquier tipo de producto. Excelentes propiedades mecánicas, resistencia al desgarre y a la ruptura. Fabricado con material 100% virgen.</p>
+                    <select class="medidas" name="" id="">
+                        <option value="">96x65x10</option>
+                        <option value="">96x65x8</option>
+                    </select>
+              <span class="precio">FABRICADO A PEDIDO</span>
+          </div>
+        </div>
+         <!--  CONTENEDOR DEL ITEM SELECCIONADO -->
+         <div class="seleccion container" id="seleccion">
+          <div class="cerrar container" onclick="cerrar(1)">
+              &#x2715
+          </div>
+          <div class="info">
+              <img src="./images/desechosMiniatura.png" loading="lazy" alt="" id="img">
+              <h2 id="producto">EMPAQUE</h2>
+              <p id="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt. Autem eligendi nostrum distinctio, dignissimos sequi, dolorum maxime nemo quaerat dolore eveniet molestias repudiandae error illum beatae quos odio quisquam!</p>
+              <span class="precio" id="precio">$ 1300</span>
+              <div class="fila container">
+                  <div class="size">
+                      <label for="">MEDIDAS</label>
+                      <select name="medidasDisponibles" id="medidasDisponibles">
+                          <option value="0">TAMAÑO 1</option>
+                          <option value="2">TAMAÑO 2</option>
+                          <option value="3">TAMAÑO 3</option>
+                          <option value="4">TAMAÑO 4</option>
+                      </select>
+                  </div>
+                  <button class="botonEnviarMensaje">REALIZAR COMPRA</button>
+              </div>
+          </div>
+        </div>
+        </section>
+        <br>
+        <br>
+
+         <!--TODO SECTION 2 -->
+        <section class="section2 container" id="section2">
+          <h1>Agrícola</h1>
+          <div class="grid" id="gridMostrador2">
+                <div class="item container" onclick="cargarProducto(this, 2)">
+                      <div class="contenedor-foto">
+                          <img src="images/productos/productoVivero.png" alt="">
+                      </div>
+                      <p class="descripcion" id="viveroName">BOLSAS PARA VIVERO</p>
+                      <p class="descripcionCompleta">Ideal para semilleros y plantulación. Fuelle de fondo y perforaciones en la base que permiten el drenaje y la aireación.</p>
+                    <select class="medidas" name="" id="">
+                        <option value="">1/4 KGs</option>
+                        <option value="">1/2 KGs</option>
+                        <option value="">1 KGs</option>
+                        <option value="">2 KGs</option>
+                    </select>
+                      <span class="precio">POR MILLAR</span>
+                  </div>
+                  <div class="item container" onclick="cargarProducto(this, 2)">
+                    <div class="contenedor-foto">
+                        <img src="images/productos/productoEnsilaje.png" alt="">
+                    </div>
+                    <p class="descripcion">BOLSAS PARA ENSILAJE</p>
+                    <p class="descripcionCompleta">Diseñadas para el proceso de ensilado de forrajes, permitiendo a través de esta técnica retener las cualidades nutritivas originales del pasto</p>
+                    <select class="medidas" name="" id="">
+                        <option value="">120x60x24</option>
+                        <option value="">A LA MEDIDA</option>
+                    </select>
+                    <span class="precio">POR BULTOS</span>
+                </div>
+                <div class="item container" onclick="cargarProducto(this, 2)">
+                  <div class="contenedor-foto">
+                      <img src="images/productos/productoAcolchado.png" alt="">
+                  </div>
+                  <p class="descripcion">ACOLCHADO PARA CULTIVOS</p>
+                  <p class="descripcionCompleta">Controla el crecimiento de la maleza, protege al cultivo del exceso de lluvia, evita la erosión. Negro y plata con protección contra UV por 9 meses.</p>
+                  <select class="medidas" name="" id="">
+                      <option value="">1000M x 1.2M</option>
+                  </select>
+                  <span class="precio">A LA MEDIDA</span>
+            </div>
+            <div class="item container" onclick="cargarProducto(this, 2)">
+                <div class="contenedor-foto">
+                    <img src="images/productos/productoBolsaAmarilla.png" alt="">
+                </div>
+                <p class="descripcion">BOLSA AMARILLA (CONTROL DE PLAGAS)</p>
+                <p class="descripcionCompleta">El color amarillo intenso de esta bolsa funciona como un estímulo foliar contra plagas como polgón verde, mosca pinta, chicharra, mosca blanca
+                  </p>
+                    <select class="medidas" name="" id="">
+                        <option value="">50x50</option>
+                        <option value="">A LA MEDIDA</option>
+                    </select>
+                <span class="precio">FABRICADO A PEDIDO</span>
+            </div>
+            
+        </div>
+         <!--  CONTENEDOR DEL ITEM SELECCIONADO -->
+         <div class="seleccion container" id="seleccion2">
+          <div class="cerrar container" onclick="cerrar(2)">
+              &#x2715
+          </div>
+          <div class="info">
+              <img src="./images/desechosMiniatura.png" alt="" id="img2">
+              <h2 id="producto2">EMPAQUE</h2>
+              <p id="descripcion2">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt. Autem eligendi nostrum distinctio, dignissimos sequi, dolorum maxime nemo quaerat dolore eveniet molestias repudiandae error illum beatae quos odio quisquam!</p>
+              <span class="precio" id="precio2">$ 1300</span>
+              <div class="fila container">
+                  <div class="size">
+                      <label for="">MEDIDAS</label>
+                      <select name="" id="medidasDisponibles2">
+                          <option value="">TAMAÑO 1</option>
+                          <option value="">TAMAÑO 2</option>
+                          <option value="">TAMAÑO 3</option>
+                          <option value="">TAMAÑO 4</option>
+                      </select>
+                  </div>
+                  <button class="botonEnviarMensaje">REALIZAR COMPRA</button>
+              </div>
+          </div>
+        </div>
+        </section>
+        <br>
+        <br>
+
+        <!--TODO SECTION 3 -->
+        <section class="section3 container" id="section3">
+           <h1>Industrial</h1>
+          <div class="grid" id="gridMostrador3">
+                <div class="item container" onclick="cargarProducto(this, 3)">
+                      <div class="contenedor-foto">
+                          <img src="images/productos/productoTermoencogible.png" alt="">
+                      </div>
+                      <p class="descripcion">TERMOENCOGIBLE</p>
+                      <p class="descripcionCompleta">Película plástica fabricada a la medida del cliente, hecha de material virgen para ser usada en todo tipo de productos.</p>
+                    <select class="medidas">
+                        <option value="">A LA MEDIDA</option>
+                    </select>
+                      <span class="precio">FABRICADO A PEDIDO</span>
+                  </div>
+                  <div class="item container" onclick="cargarProducto(this, 3)">
+                    <div class="contenedor-foto">
+                        <img src="images/productos/productoFerretero.png" alt="">
+                    </div>
+                    <p class="descripcion">PLÁSTICO NEGRO FERRETERO</p>
+                    <p class="descripcionCompleta">Rollo completo, ideal para cubrir objetos, pisos y terrenos en época de lluvia para prevenir deslizamiento de tierra.</p>
+                    <select class="medidas">
+                        <option value="">100 METROS / 60 KGs</option>
+                    </select>
+                    <span class="precio">A LA MEDIDA</span>
+                </div>
+                <div class="item container" onclick="cargarProducto(this, 3)">
+                  <div class="contenedor-foto">
+                      <img src="images/productos/productoHielo.png" alt="">
+                  </div>
+                  <p class="descripcion">BOLSAS PARA HIELO</p>
+                  <p class="descripcionCompleta">Plástico fabricado para ser resistente a desgarres. Material 100% virgen ideal para empaquetar productos destinados al consumo humano
+                </p>
+                  <select class="medidas" name="" id="">
+                      <option value="">A LA MEDIDA</option>
+                  </select>
+                  <span class="precio">FABRICADO A MEDIDA</span>
+            </div>
+            <div class="item container" onclick="cargarProducto(this, 3)">
+                <div class="contenedor-foto">
+                    <img src="images/productos/productoValvulada.png" alt="">
+                </div>
+                <p class="descripcion">BOLSAS VALVULADAS</p>
+                <p class="descripcionCompleta">Fabricadas en la medida que necesites sin importar el tipo de producto (cemento, pego, arena, cal, productos a granel)  </p>
+                    <select class="medidas" name="" id="">
+                        <option value="">A LA MEDIDA</option>
+                    </select>
+                <span class="precio">FABRICADO A PEDIDO</span>
+            </div>
+            
+        </div>
+         <!--  CONTENEDOR DEL ITEM SELECCIONADO -->
+         <div class="seleccion container" id="seleccion3">
+          <div class="cerrar container" onclick="cerrar(3)">
+              &#x2715
+          </div>
+          <div class="info">
+              <img src="./images/desechosMiniatura.png" alt="" id="img3">
+              <h2 id="producto3">EMPAQUE</h2>
+              <p id="descripcion3">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt. Autem eligendi nostrum distinctio, dignissimos sequi, dolorum maxime nemo quaerat dolore eveniet molestias repudiandae error illum beatae quos odio quisquam!</p>
+              <span class="precio" id="precio3">$ 1300</span>
+              <div class="fila container">
+                  <div class="size">
+                      <label for="">MEDIDAS</label>
+                      <select name="" id="medidasDisponibles3">
+                          <option value="">TAMAÑO 1</option>
+                          <option value="">TAMAÑO 2</option>
+                          <option value="">TAMAÑO 3</option>
+                          <option value="">TAMAÑO 4</option>
+                      </select>
+                  </div>
+                  <button class="botonEnviarMensaje">REALIZAR COMPRA</button>
+              </div>
+          </div>
+        </div>
+        </section>
+        <br>
+        <br>
+        <!-- TODO: SECTION 4 -->
+        <section class="section4 container" id="section4">
+            <h1>Desechos</h1>
+            <div class="grid" id="gridMostrador4">
+                  <div class="item container" onclick="cargarProducto(this, 4)">
+                        <div class="contenedor-foto">
+                            <img src="images/productos/productoDesechos.png" alt="">
+                        </div>
+                        <p class="descripcion" id="viveroName">BOLSAS PARA DESECHOS</p>
+                        <p class="descripcionCompleta">Película plástica fabricada a la medida del cliente, hecha de material virgen para ser usada en todo tipo de productos.</p>
+                      <select class="medidas" name="" id="">
+                          <option value="">200 LTS</option>
+                          <option value="">150 LTS</option>
+                          <option value="">120 LTS</option>
+                          <option value="">60 LTS</option>
+                          <option value="">30 LTS</option>
+                      </select>
+                        <span class="precio">POR MILLAR</span>
+                    </div>
+                    <div class="item container" onclick="cargarProducto(this, 4)">
+                      <div class="contenedor-foto">
+                          <img src="images/productos/productoDesechosBiologicos.png" alt="">
+                      </div>
+                      <p class="descripcion">BOLSAS PARA DESECHOS BIOLÓGICOS</p>
+                      <p class="descripcionCompleta">Cuentan con toda la normativa COVENIN y las medidas estandarizadas</p>
+                      <select class="medidas" name="" id="">
+                          <option value="">200 LTS</option>
+                          <option value="">60 LTS</option>
+                          <option value="">30 LTS</option>
+                      </select>
+                      <span class="precio">POR MILLAR</span>
+                  </div>
+                </div>
+                  <!--  CONTENEDOR DEL ITEM SELECCIONADO -->
+         <div class="seleccion container" id="seleccion4">
+            <div class="cerrar container" onclick="cerrar(4)">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="./images/desechosMiniatura.png" alt="" id="img4">
+                <h2 id="producto4">EMPAQUE</h2>
+                <p id="descripcion4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt. Autem eligendi nostrum distinctio, dignissimos sequi, dolorum maxime nemo quaerat dolore eveniet molestias repudiandae error illum beatae quos odio quisquam!</p>
+                <span class="precio" id="precio4">$ 1300</span>
+                <div class="fila container">
+                    <div class="size">
+                        <label for="">MEDIDAS</label>
+                        <select name="" id="medidasDisponibles4">
+                            <option value="">TAMAÑO 1</option>
+                            <option value="">TAMAÑO 2</option>
+                            <option value="">TAMAÑO 3</option>
+                            <option value="">TAMAÑO 4</option>
+                        </select>
+                    </div>
+                    <button class="botonEnviarMensaje">REALIZAR COMPRA</button>
+                </div>
+            </div>
+          </div>
+        </section>
+      <!-- iFrame QUE INSERTA EL FOOTER -->
+      <iframe class="footerIframe" src="./footer.html" frameborder="0" scrolling="no"></iframe>
+    </main>
+</div>
+  </body>
+
+  
+    <!--  Scripts-->
+    <script src="./scripts/itemSeleccionado.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/modal.js"></script>
+</html>

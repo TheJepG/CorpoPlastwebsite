@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quienes somos</title>
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="./styles/gereralStyles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/info.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <!--  Scripts-->
+    <script src="./scripts/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ION ICON -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- SCRIPTS Y ESTILOS DE LOS CARRUSELES -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="parallax" style="background-image: url(./images/bannercorpoplast.svg);">
+      <main>
+        <header class="container">
+          <div>
+            <img src="./images/IsotipoCorpoPlast.png" alt="" />
+          </div>
+          <nav class="container">
+            <a href="./index.html"><div>INICIO</div></a>
+            <a href="./info.html#servicios"><div>SERVICIOS</div></a>
+            <a href="./info.html"><div>SOBRE NOSOTROS</div></a>
+            <a href="./productos.html"><div>CATÁLOGO</div></a>
+            <a href="./contacto.html"><div>CONTACTO</div></a>
+          </nav>
+          <nav class="navbar">
+            <div class="nav_items" id="_items">
+                <a href="./index.html">INICIO</a>
+                <a href="./info.html#servicios">SERVICIO</a>
+                <a href="./info.html">SOBRE NOSOTROS</a>
+                <a href="./productos.html">CATÁLOGO</a>
+                <a href="./contacto.html">CONTACTO</a>
+           </div>
+            <div class="nav_toggle" id="_toggle" onclick="burgerMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+           </div>
+          </nav>
+        </header>
+        <section class="sectionPadre container">
+          <section class="section1 container">
+            <div
+              class="swiffy-slider slider-nav-autoplay slider-nav-animation-appear slider-nav-animation slider-item-ratio slider-item-ratio-16x9"
+              data-slider-nav-autoplay-interval="5000"
+              id="swiffy-animation"
+            >
+              <ul class="slider-container" id="container1 ">
+                <li id="slide1" class="">
+                  <img
+                    src="./images/fotosEmpresa/vivero.jpg"
+                    alt="..."
+                    loading="lazy"
+                  />
+                  <div class="image__Text container">
+                    <h1>CONSTANCIA + DEDICACIÓN + CALIDAD + PASIÓN</h1>
+                    <p>
+                      Grandes personas, que trabajan con un propósito unificado,
+                      en procesos bien definidos, todos con la pasión de superar
+                      las expectativas de nuestros clientes.
+                    </p>
+                  </div>
+                </li>
+                <li id="slide2" class="">
+                  <img
+                    src="./images/fotosEmpresa/bobinas.jpg"
+                    alt="..."
+                    loading="lazy"
+                  />
+                  <div class="image__Text container">
+                    <h1>CONSTANCIA + DEDICACIÓN + CALIDAD + PASIÓN</h1>
+                    <p>
+                      Grandes personas, que trabajan con un propósito unificado,
+                      en procesos bien definidos, todos con la pasión de superar
+                      las expectativas de nuestros clientes.
+                    </p>
+                  </div>
+                </li>
+                <li id="slide3" class="">
+                  <img
+                    src="./images/fotosEmpresa/bolsasFabrica.jpg"
+                    alt="..."
+                    loading="lazy"
+                  />
+                  <div class="image__Text container">
+                    <h1>CONSTANCIA + DEDICACIÓN + CALIDAD + PASIÓN</h1>
+                    <p>
+                      Grandes personas, que trabajan con un propósito unificado,
+                      en procesos bien definidos, todos con la pasión de superar
+                      las expectativas de nuestros clientes.
+                    </p>
+                  </div>
+                </li>
+                <li id="slide4" class="slide-visible">
+                  <img
+                    src="./images/fotosEmpresa/selladoraBolsas.jpg"
+                    alt="..."
+                    loading="lazy"
+                  />
+                  <div class="image__Text container">
+                    <h1>CONSTANCIA + DEDICACIÓN + CALIDAD + PASIÓN</h1>
+                    <p>
+                      Grandes personas, que trabajan con un propósito unificado,
+                      en procesos bien definidos, todos con la pasión de superar
+                      las expectativas de nuestros clientes.
+                    </p>
+                  </div>
+                </li>
+                <li id="slide5">
+                  <img
+                    src="./images/fotosEmpresa/extrusora.jpg"
+                    alt="..."
+                    loading="lazy"
+                  />
+                  <div class="image__Text container">
+                    <h1>CONSTANCIA + DEDICACIÓN + CALIDAD + PASIÓN</h1>
+                    <p>
+                      Grandes personas, que trabajan con un propósito unificado,
+                      en procesos bien definidos, todos con la pasión de superar
+                      las expectativas de nuestros clientes.
+                    </p>
+                  </div>
+                </li>
+                <li id="slide6">
+                  <img
+                    src="./images/fotosEmpresa/valvuladas.jpg"
+                    alt="..."
+                    loading="lazy"
+                  />
+                  <div class="image__Text container">
+                    <h1>CONSTANCIA + DEDICACIÓN + CALIDAD + PASIÓN</h1>
+                    <p>
+                      Grandes personas, que trabajan con un propósito unificado,
+                      en procesos bien definidos, todos con la pasión de superar
+                      las expectativas de nuestros clientes.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <button
+                type="button"
+                class="slider-nav"
+                aria-label="Go to previous"
+              ></button>
+              <button
+                type="button"
+                class="slider-nav slider-nav-next"
+                aria-label="Go to next"
+              ></button>
+
+              <div class="slider-indicators">
+                <button aria-label="Go to slide" class=""></button>
+                <button aria-label="Go to slide" class=""></button>
+                <button aria-label="Go to slide" class=""></button>
+                <button aria-label="Go to slide" class="active"></button>
+                <button aria-label="Go to slide"></button>
+                <button aria-label="Go to slide"></button>
+              </div>
+            </div>
+          </section>
+          <section class="section2 container">
+            <div class="grid">
+              <div class="grid__logro">
+                <h1>25+</h1>
+                <p>Años en el negocio</p>
+              </div>
+              <div class="grid__logro">
+                <h1>10+</h1>
+                <p>Grandes clientes</p>
+              </div>
+              <div class="grid__logro">
+                <h1>30+</h1>
+                <p>Productos</p>
+              </div>
+              <div class="grid__logro">
+                <h1>30</h1>
+                <p>Reciclado</p>
+              </div>
+            </div>
+          </section>
+          <section class="section3 container animado">
+            <article class="porqueNosotros container" style="transition: all 10s; opacity: 5;">
+              <div class="porqueNosotros__text container">
+                <h1>¿Por que nosotros?</strong></h1>
+                <div>
+                  <h2>Elimine al intermediario y ahorre en grande</h2>
+                  <p>
+                    Ahorre tiempo y dinero yendo directamente a la fabricación para sus necesidades de embalaje personalizado y en stock.
+                  </p>
+                </div>
+                <div>
+                  <h2>Hacemos que los empaques sean sencillos</h2>
+                  <p>
+                    Nuestro proceso simplificado hace que obtener su embalaje personalizado sea más fácil que nunca.
+                  </p>
+                </div>
+                <div>
+                  <h2>Precio más bajo garantizado siempre</h2>
+                  <p>
+                    Superaremos el precio de cualquier competidor, lo garantizamos.
+                  </p>
+                </div>
+                <div>
+                  <h2>Atención al cliente inigualable</h2>
+                  <p>
+                    Disfrute de una consulta gratuita sobre embalaje y de una atención al cliente inigualable con cada pedido.
+                  </p>
+                </div>
+                <div>
+                  <h2>Su éxito es nuestra única misión</h2>
+                  <p>
+                    No tendremos éxito a menos que usted tenga éxito. Nuestro equipo de expertos en embalaje está aquí para garantizar el éxito de su negocio cuando se trata de todas sus necesidades de embalaje.
+                  </p>
+                </div>
+              </div>
+              <div class="porqueNosotros__img">
+                <img
+                  src="./images/fotosEmpresa/asaExtraResistente.jpg"
+                  alt=""
+                />
+              </div>
+            </article>
+          </section>
+          <section class="section4 container" id="servicios">
+            <h1>Los lideres de la industria en Venezuela</h1>
+            <article class="servicios container animado">
+              <div class="servicios__imgs container">
+                <div>
+                  <img
+                    src="./images/fotosEmpresa/medidaEspecialCuadro.jpg"
+                    alt=""
+                  />
+                  <div class="servicio_image_text container">
+                   Fabricación de empaques flexibles
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="./images/fotosEmpresa/medidaEspecial.jpg"
+                    alt=""
+                  />
+                  <div  class="servicio_image_text container">
+                    Sellado de empaques
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="./images/fotosEmpresa/selladoraFabrica.jpg"
+                    alt=""
+                  />
+                  <div class="servicio_image_text container">
+                    Impresión personalizada
+                  </div>
+                </div>
+              </div>
+              <div class="servicios__text container">
+                <h2>
+                  Soluciones completas de embalaje flexible para su negocio...
+                </h2>
+                <div>
+                  <h3>Los expertos en embalaje flexible</h3>
+                  <p>
+                    Como fabricante e importador, ofrecemos una amplia gama de
+                    soluciones de embalaje protector, especializándonos en
+                    bolsas, tubos y películas de polietileno.
+                  </p>
+                </div>
+                <div>
+                  <h3>Soluciones de embalaje personalizadas</h3>
+                  <p>
+                    A través de tecnología de extrusión, impresión y conversión
+                    de última generación, fabricamos soluciones de embalaje
+                    únicas para industrias de todo tipo. Nuestro equipo de
+                    expertos en embalaje lo ayudará a elegir las opciones
+                    adecuadas para su aplicación específica.
+                  </p>
+                </div>
+                <div>
+                  <h3>Soluciones de embalaje en stock</h3>
+                  <p>
+                    Con uno de los inventarios de embalaje más grandes del país
+                    (más de 9000 artículos, incluidos más de 3000 tamaños de
+                    bolsas de polietileno), podemos satisfacer todas sus
+                    necesidades de embalaje en existencia.
+                  </p>
+                </div>
+                <div>
+                  <h3>Atención al cliente insuperable</h3>
+                  <p>
+                    Nuestros clientes nos felicitan continuamente por la
+                    atención excepcional que reciben en toda nuestra
+                    organización.
+                  </p>
+                </div>
+                <div>
+                  <h3>Valor excepcional</h3>
+                  <p>
+                    Cuando elige International Plastics, obtiene un socio
+                    experimentado dedicado a brindar las mejores soluciones de
+                    embalaje para su negocio. Nuestra promesa es simple: ¡le
+                    ofreceremos las mejores soluciones de embalaje al precio más
+                    bajo posible! ¡Garantizado!
+                  </p>
+                </div>
+              </div>
+              
+            </article>
+          </section>
+        </section>
+        <!-- iFrame QUE INSERTA EL FOOTER -->
+       <iframe class="footerIframe" src="./footer.html" frameborder="0" scrolling="no"></iframe>
+      </main>
+    </div>
+  </body>
+</html>
