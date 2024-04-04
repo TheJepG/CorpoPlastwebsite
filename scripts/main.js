@@ -58,15 +58,14 @@ function cargarProducto(item, section) {
 
 
 
-function enviarMensaje(){
-    let seleccion = medidasDisponiblesSelecionado.selectedIndex;
-    let medidaSeleccionada = medidasDisponiblesSelecionado.options[seleccion].text
-    location.href=`https://api.whatsapp.com/send?phone=+584166501656&text=Buen%20día.%20Encontr%C3%A9%20su%20sitio%20en%20internet.%20Me%20interesan%20las%20${productoSeleccionado.innerText}%20${medidaSeleccionada}%20` 
+function enviarMensaje(e){ 
+   let productoPedido = e.parentNode.parentNode.children[1].innerText;
+   let indexMedida = medidasDisponiblesSelecionado.selectedIndex;
+   let medidaPedido = e.parentNode.childNodes[1].childNodes[3].children[indexMedida].text 
+   location.href=`https://api.whatsapp.com/send?phone=+584166501656&text=Buen%20día.%20Encontr%C3%A9%20su%20sitio%20en%20internet.%20Me%20interesan%20las%20${productoPedido}%20${medidaPedido}%20`
 }
 
 botonesEnviar = document.querySelectorAll('.botonEnviarMensaje');
-console.log(botonesEnviar)
-
 for (const boton of botonesEnviar) {
-  boton.addEventListener("click", enviarMensaje)
-}
+  boton.setAttribute("onclick", "enviarMensaje(this)")
+} 

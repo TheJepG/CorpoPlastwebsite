@@ -117,8 +117,7 @@
   }
   
   .section2 button:hover {
-    width: 98%;
-    transition: all 1s;
+    transition: all 0.5s;
     background-color: rgb(227,5,19);
     box-shadow: 5px 3px 50px grey;
   }
