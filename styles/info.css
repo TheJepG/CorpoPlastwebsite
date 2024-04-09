@@ -300,6 +300,13 @@
     font-size: 1.1em;
   }
 
+  .grid__logro:hover {
+    color: black;
+    transition: none;
+    background-color: #fff;
+    box-shadow: none;
+  }
+
   /* SECCION 3 */
   .section3 {
     height: auto;
