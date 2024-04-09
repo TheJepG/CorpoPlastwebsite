@@ -70,8 +70,8 @@
 }
 
 .grid__logro:hover {
-  transition: ease 0.25s;
-  box-shadow: 1em 1em 10em white;
+  transition: all 0.25s;
+  box-shadow: 1em 1em 10em black;
   background-color:#073858;
   color: white;
 }
