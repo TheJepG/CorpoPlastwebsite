@@ -84,14 +84,9 @@ header .navbar {
     padding: 0;
   }
 
-  .nav_items {
-    height: 20%;
-  }
-
   .nav_items a {
-    height: 5em;
+    height: 10em;
     font-size: 1.2em;
-    margin: 0;
     color: white;
     position: relative;
     text-decoration: none;
@@ -133,14 +128,15 @@ header .navbar {
     background: #1e84c6;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     width: 100%;
-    height: 35vh;
+    height: 100vh;
     transform: translateX(-100%);
     transition: 0.3s ease all;
   }
 
   .nav_items a {
+    height: 5%;
     padding: 0.5em 0;
     text-align: center;
   }
