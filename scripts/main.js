@@ -56,8 +56,6 @@ function cargarProducto(item, section) {
 
 /* FUNCION PARA ENVIAR MENSAJE DEPENDIENDO DE LA MEDIDA SELECCIONADA EN EL CATALOGO*/
 
-
-
 function enviarMensaje(e){ 
    let productoPedido = e.parentNode.parentNode.children[1].innerText;
    let indexMedida = medidasDisponiblesSelecionado.selectedIndex;
@@ -69,3 +67,13 @@ botonesEnviar = document.querySelectorAll('.botonEnviarMensaje');
 for (const boton of botonesEnviar) {
   boton.setAttribute("onclick", "enviarMensaje(this)")
 } 
+
+/* Funcion que te enviar a nuestro catalogo digital */
+
+document.getElementById("catalogoDigital").addEventListener("click", function() {
+  window.open("./CatalogoCorpoPlastCA.pdf");
+})
+
+
+
+

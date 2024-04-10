@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/contacto.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <!--  Scripts-->
-    <script src="./scripts/main.js"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -100,11 +98,11 @@
               contacto lo antes posible
             </p>
             <div class="container"> 
+              <!-- aria-colspan="./scripts/enviar.php"
+              method="post" -->
             <form
-              aria-colspan="./scripts/enviar.php"
-              method="post"
               class="form_contact container"
-            >
+            onsubmit="return validarForm(this)">
               <input
                 type="text"
                 placeholder="Escribe tu nombre"
@@ -132,12 +130,15 @@
                 name="mensaje"
                 required
                 />
-              <button value="Enviar Mensaje" id="btnSend">ENVIAR</button>
+              <button value="Enviar Mensaje" id="btnSend" type="submit">ENVIAR</button>
             </form>
         </div>
           </section>
         </section>
       </main>
     </div>
+     <!--  Scripts-->
+     <script src="./scripts/main.js"></script>
+     <script src="./scripts/validacionFormulario.js"></script>
   </body>
 </html>

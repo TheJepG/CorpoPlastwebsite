@@ -1,0 +1,84 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #313131;
+}
+
+.section1 {
+    background-color: #fff;
+    border-radius: 1em;
+    width: 50vw;
+    height: 55vh;
+    box-shadow: 0.5em 0.5em 5em grey;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.mensajeIcono {
+    justify-content: center;
+}
+
+.mensajeIcono ion-icon {
+    color: #1e84c6;
+    font-size: 10em;
+}
+
+.mensajeTexto {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.mensajeTexto h3 {
+    color: #1e84c6;
+    font-size: 3em;
+    letter-spacing: -3px;
+    margin: 0;
+    text-align: center;
+}
+
+.mensajeTexto p {
+    margin: 0;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.mensajeBoton {
+    align-items: center;
+    justify-content: center;
+}
+
+.mensajeBoton button {
+    gap: 0.5em;
+    background-color: #1e84c6;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.25em;
+    border: none;
+    font-size: 1.5em;
+    padding: 0.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .section1 {
+        width: 90vw;
+        height: 60vh;
+    }
+    .mensajeTexto h3 {
+        letter-spacing: 0;
+        font-size: 2em;
+    }
+    .mensajeTexto p{
+        font-size: 1.1em;
+    }
+}
