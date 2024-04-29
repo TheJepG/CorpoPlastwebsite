@@ -1,0 +1,1 @@
+Sitio web desarrollado para la empresa fabricante de bolsas y empaques flexibles CORPO PLAST, C.A. La idea del proyecto fue desarrollarlo de la forma más "vanilla" posible, es decir, utilizar JS, HTML y CSS puro, sin frameworks ni librerías. 
